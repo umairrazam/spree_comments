@@ -1,5 +1,6 @@
 module SpreeComments
   class Engine < Rails::Engine
+    isolate_namespace Spree
     engine_name 'spree_comments'
 
     config.autoload_paths += %W(#{config.root}/lib)
