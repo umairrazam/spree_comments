@@ -1,4 +1,4 @@
-class CreateCommentTypes < ActiveRecord::Migration
+class CreateCommentTypes < SpreeExtension::Migration[4.2]
   def self.up
     create_table :comment_types do |t|
       t.string :name
